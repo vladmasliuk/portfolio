@@ -1,9 +1,9 @@
 import React from 'react';
 
-// Style
+// style
 import styled from 'styled-components';
 
-// Img
+// img
 import MenuIcon from '../../assets/img/menu-icon.svg';
 
 const Header = () => {
