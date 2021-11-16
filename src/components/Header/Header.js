@@ -10,19 +10,30 @@ import styled from 'styled-components';
 import MenuIcon from '../../assets/img/menu-icon.svg';
 
 const Header = () => {
-    let overlay = useRef(null);    
+    const [open, setOpen] = useState(false);
+
+    let overlay = useRef(null);
     
     const openMenu = () =>{
-        const t1 = new TimelineLite({pause: true});
+        let tl = new TimelineLite({pause: true});
+        let menuItem = document.querySelectorAll("li");
 
-        t1.to(overlay, 1.9, {
-            top: 0,
-            ease: Expo.easeInOut,
-        });
-
-        const menuItem = document.querySelectorAll("li");
-        t1.staggerFrom(menuItem, 1, {y: 100, opacity: 0, ease: Expo.easeOut}, 0.1);
-
+        if(open === false){
+            tl.to(overlay, 1.9, {
+                top: 0,
+                ease: Expo.easeInOut,
+            });
+            tl.staggerFrom(menuItem, 1, {y: 100, opacity: 0, ease: Expo.easeOut}, 0.1);
+            tl.play();
+            setOpen(true);
+        }else{
+            tl.to(overlay, 1.9, {
+                top: '-100%',
+                ease: Expo.easeInOut,
+            });
+            tl.play();
+            setOpen(false);
+        }
     }
 
     return (
@@ -35,11 +46,10 @@ const Header = () => {
 
             <MenuOverlay ref={el=> overlay = el}>
                 <Menu>
-                    <li><a href="#about-section">About</a></li>
-                    <li><a href="#about-section">About</a></li>
-                    <li><a href="#about-section">About</a></li>
-                    <li><a href="#about-section">About</a></li>
-                    <li><a href="#about-section">About</a></li>
+                    <MenuItem><a href="/#">About</a></MenuItem>
+                    <MenuItem><a href="/#">Experience</a></MenuItem>
+                    <MenuItem><a href="/#">Projects</a></MenuItem>
+                    <MenuItem><a href="/#">Contact</a></MenuItem>
                 </Menu>
             </MenuOverlay>
         </>
@@ -87,5 +97,12 @@ const Menu = styled.ul`
     list-style: none;
     display: flex;
 `;
+
+const MenuItem = styled.li`
+    &:not(:last-child) {
+        margin-right: 120px;
+    }
+`;
+
 
 export default Header;

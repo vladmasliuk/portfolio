@@ -4,7 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 // img
-import MainImg from '../../assets/img/main-img.jpg';
+import MainImg from '../../../assets/img/main-img.jpg';
 
 const MainSection = () =>{
     return(

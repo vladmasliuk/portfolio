@@ -1,7 +1,7 @@
 import React from "react";
 
 // components
-import MainSection from '../components/MainSection/MainSection';
+import MainSection from '../components/Sections/MainSection/MainSection';
 
 const homePage = () =>{
     return(
