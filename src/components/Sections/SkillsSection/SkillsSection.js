@@ -1,4 +1,5 @@
 import React from 'react';
+import './SkillsSection.css'
 
 // libs
 import SkillBar from 'react-skillbars';
@@ -8,7 +9,7 @@ import Section from '../../Basic/Section'
 import SectionTitle from '../../Basic/SectionTitle';
 
 // style
-// import styled from 'styled-components';
+import styled from 'styled-components';
 
 const skills = [
     {type: "HTML", level: 85},
@@ -35,10 +36,28 @@ const SkillsSection = () =>{
                 <SectionTitle>
                     02. Skills
                 </SectionTitle>
-                <SkillBar skills={skills} colors={skillsColor}/>
+                <SkillsContent>
+                    <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna 
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    </Text>
+                    <SkillBar skills={skills} colors={skillsColor}/>
+                </SkillsContent>
             </Section>
        </>
     )
 }
+
+const SkillsContent = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+`;
+
+const Text = styled.p`
+    color: #e6e6e6;
+    margin: 0;
+`;
 
 export default SkillsSection;

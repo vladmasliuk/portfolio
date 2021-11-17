@@ -1,0 +1,10 @@
+/* progress bar */
+.skillbar-title,
+.skillbar-bar,
+.skillbar{
+    border-radius: 0 !important;
+}
+
+.skillbar-title{
+    font-weight: 400 !important;
+}
