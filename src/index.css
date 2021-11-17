@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
 
 @font-face {
   font-family: 'True Lies';
@@ -11,6 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: Poppins;
   background: #111;
+  height: 5000px;
 }
 
 code {

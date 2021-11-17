@@ -16,10 +16,12 @@ function App() {
     <Router>
       <Header/>
       <Cursor/>
-      <Switch>
-        <Route exact path="/" component={homePage}/>
-        <Route path="" component={notFoundPage}/>
-      </Switch>
+      <div id="page-wrap">
+        <Switch>
+          <Route exact path="/" component={homePage}/>
+          <Route path="" component={notFoundPage}/>
+        </Switch>
+      </div>
     </Router>
   );
 }
