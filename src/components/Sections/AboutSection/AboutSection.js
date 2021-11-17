@@ -12,7 +12,7 @@ const AboutSection = () =>{
        <>
             <Section>
                 <SectionTitle>
-                    <h2>01. About</h2>
+                    01. About
                 </SectionTitle>
                 <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna 
@@ -25,7 +25,7 @@ const AboutSection = () =>{
 }
 
 const Text = styled.p`
-    color: #fff;
+    color: #e6e6e6;
     font-size: 70px;
     line-height: 1.25;
     margin: 0;

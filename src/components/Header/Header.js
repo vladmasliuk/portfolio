@@ -48,9 +48,10 @@ const Header = () => {
             <MenuOverlay ref={el=> overlay = el}>
                 <Menu>
                     <MenuItem><a href="/#">01. About</a></MenuItem>
-                    <MenuItem><a href="/#">02. Experience</a></MenuItem>
-                    <MenuItem><a href="/#">03. Projects</a></MenuItem>
-                    <MenuItem><a href="/#">04. Contact</a></MenuItem>
+                    <MenuItem><a href="/#">02. Skills</a></MenuItem>
+                    <MenuItem><a href="/#">03. Experience</a></MenuItem>
+                    <MenuItem><a href="/#">04. Projects</a></MenuItem>
+                    <MenuItem><a href="/#">05. Contact</a></MenuItem>
                 </Menu>
             </MenuOverlay>
         </>

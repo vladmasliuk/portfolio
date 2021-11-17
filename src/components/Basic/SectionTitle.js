@@ -13,7 +13,7 @@ const SectionTitle = ({children}) =>{
 
 const Title = styled.h2`
     color: #3cff00;
-    font-size: 12px;
+    font-size: 16px;
     font-family: Syncopate,sans-serif;
     margin: 0 0 50px 0;
     text-transform: uppercase;
