@@ -18,15 +18,18 @@ const Header = () => {
         let tl = new TimelineLite({pause: true});
         let menuItem = document.querySelectorAll("li");
 
+       
+
         if(open === false){
             tl.to(overlay, 1.9, {
                 top: 0,
                 ease: Expo.easeInOut,
             });
-            tl.staggerFrom(menuItem, 1, {y: 100, opacity: 0, ease: Expo.easeOut}, 0.1);
+            tl.staggerFromTo(menuItem, 1, {y: 100, opacity: 0, ease: Expo.easeOut}, {y: 0, opacity: 1, ease: Expo.easeOut}, 0.1);
             tl.play();
             setOpen(true);
         }else{
+            tl.staggerFromTo(menuItem, 1, {y: 0, opacity: 1, ease: Expo.easeOut}, {y: 100, opacity: 0, ease: Expo.easeOut}, 0.1);
             tl.to(overlay, 1.9, {
                 top: '-100%',
                 ease: Expo.easeInOut,
