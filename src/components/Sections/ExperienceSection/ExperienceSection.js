@@ -1,7 +1,8 @@
 import React from 'react';
 
 // components
-import Section from '../../Basic/Section'
+import Container from '../../Basic/Container';
+import Section from '../../Basic/Section';
 import SectionTitle from '../../Basic/SectionTitle';
 
 // style
@@ -29,24 +30,26 @@ const ExperienceSection = () =>{
     return(
        <>
             <Section>
-                <SectionTitle>
-                    03. Experience
-                </SectionTitle>
-                <TimelineWrap>
-                    <Timeline>
-                        <List>
-                            {items.map((item, index) => (
-                                <ListItem key={index}>
-                                    <ListItemContent>
-                                        <Date>{item.date}</Date>
-                                        <Title>{item.title}</Title>
-                                        <Desc>{item.desc}</Desc>
-                                    </ListItemContent>
-                            </ListItem>
-                            ))}
-                        </List>
-                    </Timeline>
-                </TimelineWrap>
+                <Container>
+                    <SectionTitle>
+                        03. Experience
+                    </SectionTitle>
+                    <TimelineWrap>
+                        <Timeline>
+                            <List>
+                                {items.map((item, index) => (
+                                    <ListItem key={index}>
+                                        <ListItemContent>
+                                            <Date>{item.date}</Date>
+                                            <Title>{item.title}</Title>
+                                            <Desc>{item.desc}</Desc>
+                                        </ListItemContent>
+                                </ListItem>
+                                ))}
+                            </List>
+                        </Timeline>
+                    </TimelineWrap>
+                </Container>
             </Section>
        </>
     )
