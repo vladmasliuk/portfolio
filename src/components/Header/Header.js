@@ -16,7 +16,7 @@ const Header = () => {
     
     const openMenu = () =>{
         let tl = new TimelineLite({pause: true});
-        let menuItem = document.querySelectorAll("li");
+        let menuItem = document.querySelectorAll("#main-menu li");
 
         if(open === false){
             tl.to(overlay, 1.9, {
@@ -46,7 +46,7 @@ const Header = () => {
             </MenuBtnWrap>
 
             <MenuOverlay ref={el=> overlay = el}>
-                <Menu>
+                <Menu id="main-menu">
                     <MenuItem><a href="/#">01. About</a></MenuItem>
                     <MenuItem><a href="/#">02. Skills</a></MenuItem>
                     <MenuItem><a href="/#">03. Experience</a></MenuItem>

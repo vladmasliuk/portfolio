@@ -42,7 +42,7 @@ const SkillsSection = () =>{
                         aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
                         ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                     </Text>
-                    <SkillBar skills={skills} colors={skillsColor}/>
+                    <SkillBar skills={skills} colors={skillsColor} height={30}/>
                 </SkillsContent>
             </Section>
        </>
