@@ -1,8 +1,4 @@
 import React from 'react';
-import './SkillsSection.css'
-
-// libs
-import SkillBar from 'react-skillbars';
 
 // components
 import Section from '../../Basic/Section'
@@ -11,23 +7,13 @@ import SectionTitle from '../../Basic/SectionTitle';
 // style
 import styled from 'styled-components';
 
-const skills = [
-    {type: "HTML", level: 85},
-    {type: "CSS", level: 75},
-    {type: "JS", level: 75},
-    {type: "JQuery", level: 75},
-    {type: "Wordpress", level: 75},
-    {type: "React", level: 75},
-    {type: "ReactNative", level: 75},
-];
-
-const skillsColor = {
-    "bar": "#636363",
-    "title": {
-      "text": "#e6e6e6",
-      "background": "#636363"
-    }
-}
+// img
+import html from '../../../assets/img/html.svg'
+import css from '../../../assets/img/css.svg'
+import js from '../../../assets/img/js.svg'
+import react from '../../../assets/img/react.svg'
+import wp from '../../../assets/img/wp.svg'
+import woocommerce from '../../../assets/img/woocommerce.svg'
 
 const SkillsSection = () =>{
     return(
@@ -42,7 +28,28 @@ const SkillsSection = () =>{
                         aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
                         ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                     </Text>
-                    <SkillBar skills={skills} colors={skillsColor} height={30}/>
+                    <div className="about-image">
+                        <div className="about-image-wrapper">
+                            <div className="card-image">
+                                <img src={html} alt=""/>
+                            </div>
+                            <div className="card-image">
+                                <img src={css} alt=""/>
+                            </div>
+                            <div className="card-image">
+                                <img src={js} alt=""/>
+                            </div>
+                            <div className="card-image">
+                                <img src={react} alt=""/>
+                            </div>
+                            <div className="card-image">
+                                <img src={wp} alt=""/>
+                            </div>
+                            <div className="card-image">
+                                <img src={woocommerce} alt=""/>
+                            </div>
+                        </div>
+                    </div>
                 </SkillsContent>
             </Section>
        </>

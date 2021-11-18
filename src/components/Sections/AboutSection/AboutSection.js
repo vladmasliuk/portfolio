@@ -26,7 +26,7 @@ const AboutSection = () =>{
 
 const Text = styled.p`
     color: #e6e6e6;
-    font-size: 60px;
+    font-size: 70px;
     line-height: 1.25;
     margin: 0;
 `;
