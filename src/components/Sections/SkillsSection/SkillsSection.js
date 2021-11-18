@@ -28,28 +28,28 @@ const SkillsSection = () =>{
                         aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
                         ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                     </Text>
-                    <div className="about-image">
-                        <div className="about-image-wrapper">
-                            <div className="card-image">
-                                <img src={html} alt=""/>
-                            </div>
-                            <div className="card-image">
-                                <img src={css} alt=""/>
-                            </div>
-                            <div className="card-image">
-                                <img src={js} alt=""/>
-                            </div>
-                            <div className="card-image">
-                                <img src={react} alt=""/>
-                            </div>
-                            <div className="card-image">
-                                <img src={wp} alt=""/>
-                            </div>
-                            <div className="card-image">
-                                <img src={woocommerce} alt=""/>
-                            </div>
-                        </div>
-                    </div>
+                    <ImagesContainer>
+                        <ImagesWrap>
+                            <ImageCard>
+                                <Image src={html} alt=""/>
+                            </ImageCard>
+                            <ImageCard className="card-image">
+                                <Image src={css} alt=""/>
+                            </ImageCard>
+                            <ImageCard className="card-image">
+                                <Image src={js} alt=""/>
+                            </ImageCard>
+                            <ImageCard className="card-image">
+                                <Image src={react} alt=""/>
+                            </ImageCard>
+                            <ImageCard className="card-image">
+                                <Image src={wp} alt=""/>
+                            </ImageCard>
+                            <ImageCard className="card-image">
+                                <Image src={woocommerce} alt=""/>
+                            </ImageCard>
+                        </ImagesWrap>
+                    </ImagesContainer>
                 </SkillsContent>
             </Section>
        </>
@@ -66,5 +66,34 @@ const Text = styled.p`
     color: #e6e6e6;
     margin: 0;
 `;
+
+const ImagesContainer = styled.div`
+    overflow: hidden;
+`;
+
+const ImagesWrap = styled.div`
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    transform-style: preserve-3d;
+    transform: rotateX(65deg) rotateZ(50deg) rotateY(5deg);
+`;
+
+const ImageCard = styled.div`
+    transition: 0.3s;
+    &:hover{
+        transform: translateZ(20px);
+    }
+`;
+
+const Image = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+`;
+
+
 
 export default SkillsSection;
