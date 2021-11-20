@@ -28,30 +28,28 @@ const items = [
 
 const ExperienceSection = () =>{
     return(
-       <>
-            <Section>
-                <Container>
-                    <SectionTitle>
-                        03. Experience
-                    </SectionTitle>
-                    <TimelineWrap>
-                        <Timeline>
-                            <List>
-                                {items.map((item, index) => (
-                                    <ListItem key={index}>
-                                        <ListItemContent>
-                                            <Date>{item.date}</Date>
-                                            <Title>{item.title}</Title>
-                                            <Desc>{item.desc}</Desc>
-                                        </ListItemContent>
-                                </ListItem>
-                                ))}
-                            </List>
-                        </Timeline>
-                    </TimelineWrap>
-                </Container>
-            </Section>
-       </>
+        <Section>
+            <Container>
+                <SectionTitle>
+                    03. Experience
+                </SectionTitle>
+                <TimelineWrap>
+                    <Timeline>
+                        <List>
+                            {items.map((item, index) => (
+                                <ListItem key={index}>
+                                    <ListItemContent>
+                                        <Date>{item.date}</Date>
+                                        <Title>{item.title}</Title>
+                                        <Desc>{item.desc}</Desc>
+                                    </ListItemContent>
+                            </ListItem>
+                            ))}
+                        </List>
+                    </Timeline>
+                </TimelineWrap>
+            </Container>
+        </Section>
     )
 }
 
@@ -86,7 +84,7 @@ const List = styled.ul`
 const ListItem = styled.li`
     width: 50%;
     position: relative;
-    padding: 20px;
+    // padding: 20px;
     background-color: #2a2a2a;
     color: white;
     border-radius: 10px;
@@ -105,7 +103,7 @@ const ListItem = styled.li`
     &:nth-child(odd){
         float: left;
         clear: right;
-        transform: translateX(-70px);
+        transform: translateX(-30px);
         border-radius: 20px 0px 20px 20px;
         &:before {
             transform: translate(50%, -50%);
@@ -115,7 +113,7 @@ const ListItem = styled.li`
     &:nth-child(even){
         float: right;
         clear: left;
-        transform: translateX(70px);
+        transform: translateX(30px);
         border-radius: 0px 20px 20px 20px;
         &:before {
             transform: translate(-50%, -50%);

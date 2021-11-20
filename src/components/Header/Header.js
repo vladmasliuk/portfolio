@@ -47,11 +47,21 @@ const Header = () => {
 
             <MenuOverlay ref={el=> overlay = el}>
                 <Menu id="main-menu">
-                    <MenuItem><a href="/#">01. About</a></MenuItem>
-                    <MenuItem><a href="/#">02. Skills</a></MenuItem>
-                    <MenuItem><a href="/#">03. Experience</a></MenuItem>
-                    <MenuItem><a href="/#">04. Projects</a></MenuItem>
-                    <MenuItem><a href="/#">05. Contact</a></MenuItem>
+                    <MenuItem>
+                        <MenuItemLink href="/#">01. About</MenuItemLink>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuItemLink href="/#">02. Skills</MenuItemLink>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuItemLink href="/#">03. Experience</MenuItemLink>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuItemLink href="/#">04. Projects</MenuItemLink>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuItemLink href="/#">05. Contact</MenuItemLink>
+                    </MenuItem>
                 </Menu>
             </MenuOverlay>
         </>
@@ -90,7 +100,6 @@ const MenuOverlay = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
 `;
 
 const Menu = styled.ul`
@@ -106,5 +115,9 @@ const MenuItem = styled.li`
     }
 `;
 
+const MenuItemLink = styled.a`
+    font-family: 'ProFontWindows', sans-serif;
+    text-transform: uppercase;
+`;
 
 export default Header;

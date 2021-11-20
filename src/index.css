@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
 
 @font-face {
   font-family: 'True Lies';
   src: url('./assets/fonts/TrueLies.otf') format("truetype");
+}
+
+@font-face {
+  font-family: 'ProFontWindows';
+  src: url('./assets/fonts/ProFontWindows.ttf') format("truetype");
 }
 
 body {
@@ -23,5 +27,10 @@ code {
 
 ::selection {
   color: #3cff00;
-  background: #000; 
+  background: #000;
+}
+
+a{
+  text-decoration: none;
+  color: #e6e6e6;
 }

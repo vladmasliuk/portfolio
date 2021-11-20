@@ -12,10 +12,9 @@ const SectionTitle = ({children}) =>{
 }
 
 const Title = styled.h2`
+    font-family: 'ProFontWindows', sans-serif;
     color: #3cff00;
-    // color: #fff;
-    font-size: 16px;
-    font-family: Syncopate,sans-serif;
+    font-size: 18px;
     margin: 0 0 50px 0;
     text-transform: uppercase;
     letter-spacing: 5px;
