@@ -6,6 +6,7 @@ import AboutSection from '../components/Sections/AboutSection/AboutSection';
 import SkillsSection from '../components/Sections/SkillsSection/SkillsSection';
 import ExperienceSection from '../components/Sections/ExperienceSection/ExperienceSection';
 import ProjectsSection from '../components/Sections/ProjectsSection/ProjectsSection';
+import ContactSection from '../components/Sections/ContactSection/ContactSection';
 
 const HomePage = () =>{
     return(
@@ -15,6 +16,7 @@ const HomePage = () =>{
             <SkillsSection/>
             <ExperienceSection/>
             <ProjectsSection/>
+            <ContactSection/>
         </>
     )
 }

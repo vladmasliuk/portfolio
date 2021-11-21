@@ -1,7 +1,9 @@
 import React, {useRef, useState} from 'react';
 
 // libs
+import { useLocation, matchPath } from 'react-router-dom'
 import {TimelineLite, Expo} from 'gsap';
+import Scroll from 'react-scroll'
 
 // style
 import styled from 'styled-components';
@@ -37,8 +39,17 @@ const Header = () => {
         }
     }
 
+    const ScrollLink = Scroll.Link;
+    const location = useLocation();
+    const match = matchPath(location.pathname, {
+        path: "/project/:id",
+        exact: true
+    })
+
     return (
         <>
+        {!match ? (
+            <>
             <MenuBtnWrap>
                 <MenuBtn onClick={openMenu}>
                     <MenuBtnIcon src={MenuIcon} alt="Menu icon"/>
@@ -48,22 +59,65 @@ const Header = () => {
             <MenuOverlay ref={el=> overlay = el}>
                 <Menu id="main-menu">
                     <MenuItem>
-                        <MenuItemLink href="/#">01. About</MenuItemLink>
+                        <ScrollLink 
+                            to="about-sec" 
+                            spy={true} 
+                            smooth={true} 
+                            duration={1000} 
+                            onClick={openMenu}
+                        >
+                            01. About
+                        </ScrollLink>
                     </MenuItem>
                     <MenuItem>
-                        <MenuItemLink href="/#">02. Skills</MenuItemLink>
+                        <ScrollLink 
+                            to="skills-sec" 
+                            spy={true} 
+                            smooth={true} 
+                            duration={1000} 
+                            onClick={openMenu}
+                        >
+                            02. Skills
+                        </ScrollLink>
                     </MenuItem>
                     <MenuItem>
-                        <MenuItemLink href="/#">03. Experience</MenuItemLink>
+                        <ScrollLink 
+                            to="experience-sec" 
+                            spy={true} 
+                            smooth={true} 
+                            duration={1000} 
+                            onClick={openMenu}
+                        >
+                            03. Experience
+                        </ScrollLink>
                     </MenuItem>
                     <MenuItem>
-                        <MenuItemLink href="/#">04. Projects</MenuItemLink>
+                        <ScrollLink 
+                            to="projects-sec" 
+                            spy={true} 
+                            smooth={true} 
+                            duration={1000} 
+                            onClick={openMenu}
+                        >
+                            04. Projects
+                        </ScrollLink>
                     </MenuItem>
                     <MenuItem>
-                        <MenuItemLink href="/#">05. Contact</MenuItemLink>
+                        <ScrollLink 
+                            to="contact-sec" 
+                            spy={true} 
+                            smooth={true} 
+                            duration={1000} 
+                            onClick={openMenu}
+                        >
+                            05. Contact
+                        </ScrollLink>
                     </MenuItem>
                 </Menu>
             </MenuOverlay>
+        </>
+        ) :null
+        }
         </>
     )
 }
@@ -113,11 +167,10 @@ const MenuItem = styled.li`
     &:not(:last-child) {
         margin-right: 120px;
     }
-`;
-
-const MenuItemLink = styled.a`
-    font-family: 'ProFontWindows', sans-serif;
-    text-transform: uppercase;
+    & a{
+        font-family: 'ProFontWindows', sans-serif;
+        text-transform: uppercase;
+    }
 `;
 
 export default Header;

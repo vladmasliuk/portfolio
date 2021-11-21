@@ -1,5 +1,8 @@
 import React from 'react';
 
+// lib
+import { Element } from 'react-scroll'
+
 // components
 import Container from '../../Basic/Container';
 import Section from '../../Basic/Section';
@@ -15,18 +18,20 @@ import projects from '../../../projects';
 const ProjectsSection = () =>{
 
     return(
-        <Section light>
-            <Container>
-                <SectionTitle>
-                    04. Some of my projects
-                </SectionTitle>
-                <ProjectList>
-                    {projects.map((project, index) => (
-                        <ProjectItem key={index} project={project} index={index}/>
-                    ))}
-                </ProjectList>
-            </Container>
-        </Section>
+        <Element id='projects-sec' name='projects-sec'>
+            <Section light>
+                <Container>
+                    <SectionTitle>
+                        04. Some of my projects
+                    </SectionTitle>
+                    <ProjectList>
+                        {projects.map((project, index) => (
+                            <ProjectItem key={index} project={project} index={index}/>
+                        ))}
+                    </ProjectList>
+                </Container>
+            </Section>
+        </Element>
     )
 }
 

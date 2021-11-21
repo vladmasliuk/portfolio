@@ -1,5 +1,8 @@
 import React from 'react';
 
+// lib
+import { Element } from 'react-scroll'
+
 // components
 import Container from '../../Basic/Container';
 import Section from '../../Basic/Section';
@@ -18,40 +21,42 @@ import woocommerce from '../../../assets/img/woocommerce.svg'
 
 const SkillsSection = () =>{
     return(
-        <Section light>
-            <Container>
-                <SectionTitle>02. Skills</SectionTitle>
-                <SkillsContent>
-                    <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    </Text>
-                    <ImagesContainer>
-                        <ImagesWrap>
-                            <ImageCard>
-                                <Image src={html} alt=""/>
-                            </ImageCard>
-                            <ImageCard className="card-image">
-                                <Image src={css} alt=""/>
-                            </ImageCard>
-                            <ImageCard className="card-image">
-                                <Image src={js} alt=""/>
-                            </ImageCard>
-                            <ImageCard className="card-image">
-                                <Image src={react} alt=""/>
-                            </ImageCard>
-                            <ImageCard className="card-image">
-                                <Image src={wp} alt=""/>
-                            </ImageCard>
-                            <ImageCard className="card-image">
-                                <Image src={woocommerce} alt=""/>
-                            </ImageCard>
-                        </ImagesWrap>
-                    </ImagesContainer>
-                </SkillsContent>
-            </Container>
-        </Section>
+        <Element id='skills-sec' name='skills-sec'>
+            <Section light>
+                <Container>
+                    <SectionTitle>02. Skills</SectionTitle>
+                    <SkillsContent>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        </Text>
+                        <ImagesContainer>
+                            <ImagesWrap>
+                                <ImageCard>
+                                    <Image src={html} alt=""/>
+                                </ImageCard>
+                                <ImageCard className="card-image">
+                                    <Image src={css} alt=""/>
+                                </ImageCard>
+                                <ImageCard className="card-image">
+                                    <Image src={js} alt=""/>
+                                </ImageCard>
+                                <ImageCard className="card-image">
+                                    <Image src={react} alt=""/>
+                                </ImageCard>
+                                <ImageCard className="card-image">
+                                    <Image src={wp} alt=""/>
+                                </ImageCard>
+                                <ImageCard className="card-image">
+                                    <Image src={woocommerce} alt=""/>
+                                </ImageCard>
+                            </ImagesWrap>
+                        </ImagesContainer>
+                    </SkillsContent>
+                </Container>
+            </Section>
+        </Element>
     )
 }
 

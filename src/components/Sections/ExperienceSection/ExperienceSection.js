@@ -1,5 +1,8 @@
 import React from 'react';
 
+// lib
+import { Element } from 'react-scroll'
+
 // components
 import Container from '../../Basic/Container';
 import Section from '../../Basic/Section';
@@ -10,46 +13,48 @@ import styled from 'styled-components';
 
 const items = [
     {
-        date: "20th may, 2021",
+        date: "05/2019 – 10/2019",
         title: "FIDE",
-        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.",
+        desc:"Wordpress - Woocommerce developer",
     },
     {
-        date: "20th may, 2021",
+        date: "06/2019 – 12/2019",
         title: "Freelancer",
-        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.",
+        desc:"Wordpress - Woocommerce developer",
     },
     {
-        date: "20th may, 2021",
+        date: "01/2020 – currently",
         title: "SGR",
-        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.",
+        desc:"Wordpress - Woocommerce developer / Front-End JS developer",
     },
 ]
 
 const ExperienceSection = () =>{
     return(
-        <Section>
-            <Container>
-                <SectionTitle>
-                    03. Experience
-                </SectionTitle>
-                <TimelineWrap>
-                    <Timeline>
-                        <List>
-                            {items.map((item, index) => (
-                                <ListItem key={index}>
-                                    <ListItemContent>
-                                        <Date>{item.date}</Date>
-                                        <Title>{item.title}</Title>
-                                        <Desc>{item.desc}</Desc>
-                                    </ListItemContent>
-                            </ListItem>
-                            ))}
-                        </List>
-                    </Timeline>
-                </TimelineWrap>
-            </Container>
-        </Section>
+        <Element id='experience-sec' name='experience-sec'>
+            <Section>
+                <Container>
+                    <SectionTitle>
+                        03. Experience
+                    </SectionTitle>
+                    <TimelineWrap>
+                        <Timeline>
+                            <List>
+                                {items.map((item, index) => (
+                                    <ListItem key={index}>
+                                        <ListItemContent>
+                                            <Date>{item.date}</Date>
+                                            <Title>{item.title}</Title>
+                                            <Desc>{item.desc}</Desc>
+                                        </ListItemContent>
+                                </ListItem>
+                                ))}
+                            </List>
+                        </Timeline>
+                    </TimelineWrap>
+                </Container>
+            </Section>
+        </Element>
     )
 }
 
