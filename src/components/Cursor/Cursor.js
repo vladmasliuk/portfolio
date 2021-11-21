@@ -60,6 +60,7 @@ const Cursor = () => {
         document.querySelectorAll("a, button").forEach((el) => {
             el.addEventListener("mouseover", () => setLinkHovered(true));
             el.addEventListener("mouseout", () => setLinkHovered(false));
+            el.addEventListener("click", () => setLinkHovered(false));
         });
     };
 

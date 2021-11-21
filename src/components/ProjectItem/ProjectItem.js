@@ -54,11 +54,9 @@ const ProjectItem = ({project}) =>{
         dispatch({type: 'MOUSE/POS', payload: initialState.parallaxPos});
     }
 
-    const projectLink = project.title.replace(/ /g,'');
-
     return(
         <Item>
-            <Link to={`/project/${projectLink}`} 
+            <Link to={`/project/${project.id}`} 
                 ref={item} 
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
@@ -114,7 +112,7 @@ const ItemImg = styled.img`
 const ItemLink = styled.h3`
     font-size: 7vw;
     z-index: 1;
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
+    -webkit-text-stroke: 1px rgba(230, 230, 230, 1);
     color: transparent;
     margin: 0;
     font-weight: 400;

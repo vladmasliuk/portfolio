@@ -20,9 +20,7 @@ const SkillsSection = () =>{
     return(
         <Section light>
             <Container>
-                <SectionTitle>
-                    02. Skills
-                </SectionTitle>
+                <SectionTitle>02. Skills</SectionTitle>
                 <SkillsContent>
                     <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna 

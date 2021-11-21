@@ -4,13 +4,16 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // pages
-import homePage from './pages/homePage';
-import notFoundPage from './pages/notFoundPage';
-import projectPage from './pages/projectPage';
+import HomePage from './pages/HomePage';
+import NotFoundPage from './pages/NotFoundPage';
+import ProjectPage from './pages/ProjectPage';
 
 // components
 import Header from './components/Header/Header';
 import Cursor from './components/Cursor/Cursor';
+
+// data
+import projects from './projects';
 
 function App() {
   return (
@@ -19,9 +22,12 @@ function App() {
       <Cursor/>
       <div id="page-wrap">
         <Switch>
-          <Route exact path="/" component={homePage}/>
-          <Route exact path="/project/:title" component={projectPage}/>
-          <Route path="" component={notFoundPage}/>
+          <Route exact path="/" component={HomePage}/>
+          <Route exact path="/project/:id" render={({match}) => (
+            <ProjectPage project={projects.find(p => p.id === match.params.id)} />
+          )} />
+
+          <Route path="" component={NotFoundPage}/>
         </Switch>
       </div>
     </Router>

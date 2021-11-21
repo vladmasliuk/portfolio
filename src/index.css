@@ -16,8 +16,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: Poppins;
   background: #1d1d1d;
-  /* background: #2a2a2a; */
-  height: 5000px;
 }
 
 code {

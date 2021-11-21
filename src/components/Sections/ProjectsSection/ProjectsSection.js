@@ -9,38 +9,8 @@ import ProjectItem from '../../ProjectItem/ProjectItem'
 // style
 import styled from 'styled-components';
 
-const projects = [
-    {
-        "title": "adbl",
-        "desc": "description",
-        "img": "../project/adbl/adbl-main.jpeg",
-        "url": "https://someurl.com",
-    },
-    {
-        "title": "lesesame",
-        "desc": "description",
-        "img": "../project/lesesame/lesesame-main.jpg",
-        "url": "https://someurl.com",
-    },
-    {
-        "title": "manufakturawladku",
-        "desc": "description",
-        "img": "../project/manuf/manuf-main.jpg",
-        "url": "https://someurl.com",
-    },
-    {
-        "title": "social media",
-        "desc": "description",
-        "img": "../project/socialmedia/social-main.jpg",
-        "url": "https://someurl.com",
-    },
-    {
-        "title": "robimelektryke",
-        "desc": "description",
-        "img": "../project/robimelektryke/robim-main.jpg",
-        "url": "https://someurl.com",
-    }
-]
+// data
+import projects from '../../../projects';
 
 const ProjectsSection = () =>{
 

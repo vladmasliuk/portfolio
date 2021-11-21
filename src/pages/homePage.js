@@ -7,7 +7,7 @@ import SkillsSection from '../components/Sections/SkillsSection/SkillsSection';
 import ExperienceSection from '../components/Sections/ExperienceSection/ExperienceSection';
 import ProjectsSection from '../components/Sections/ProjectsSection/ProjectsSection';
 
-const homePage = () =>{
+const HomePage = () =>{
     return(
         <>
             <MainSection/>
@@ -19,4 +19,4 @@ const homePage = () =>{
     )
 }
 
-export default homePage;
+export default HomePage;

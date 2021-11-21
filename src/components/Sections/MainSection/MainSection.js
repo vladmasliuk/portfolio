@@ -11,7 +11,7 @@ const MainSection = () =>{
         <MainSectionWrap style={{backgroundImage: `url(${MainImg})`}}>
             <MainSectionOverlay>
                 <TitleWrap>
-                    <Title>Vlad Masliuk</Title>
+                    <Title>Vladyslav Masliuk</Title>
                     <Title>Portfolio</Title>
                 </TitleWrap>
             </MainSectionOverlay>
