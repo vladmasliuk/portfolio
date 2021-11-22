@@ -15,7 +15,7 @@ const projects = [
     },
     {
         "id": "manufakturawladku",
-        "title": "manufakturawladku",
+        "title": "manufakturawlasku",
         "desc": "description",
         "img": "https://i.ibb.co/wL0Mcs7/manuf-main.jpg",
         "url": "https://manufakturawlasku.pl/",

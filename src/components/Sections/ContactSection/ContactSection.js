@@ -17,7 +17,7 @@ const ContactSection = () =>{
                 <Container>
                     <Wrap>
                         <div>
-                            <h2>Contact</h2>
+                            <Title>Contact</Title>
                             <a href="mailto:vladmasliuk@gmail.com">vladmasliuk@gmail.com</a>
                         </div>
                     </Wrap>
@@ -34,4 +34,12 @@ const Wrap = styled.div`
     text-align: center;
 `;
 
+const Title = styled.h2`
+    color: #fff;
+    // font-family: 'True Lies',sans-serif;
+    font-size: 7vw;
+    text-shadow: 0 0 10px  #3cff00, 0 0 40px  #3cff00 , 0 0 80px  #3cff00;
+    margin: 0 0 20px 0;
+    font-weight: 400;
+`;
 export default ContactSection;
