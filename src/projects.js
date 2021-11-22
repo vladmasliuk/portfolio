@@ -5,6 +5,28 @@ const projects = [
         "desc": "description",
         "img": "https://i.ibb.co/V2CBrc1/adbl-main.jpg",
         "url": "https://adbl.eu/",
+        "features": [
+            {
+                "title": "Map",
+                "desc": "features description",
+                "img": "https://i.ibb.co/HH961sd/adbl-map.gif",
+            },
+            {
+                "title": "Calendar",
+                "desc": "features description",
+                "img": "https://i.ibb.co/9wGNBsX/adbl-calendar.gif",
+            },
+            {
+                "title": "Category",
+                "desc": "features description",
+                "img": "https://i.ibb.co/0YqXKNF/adbl-category.gif",
+            },
+            {
+                "title": "Cart",
+                "desc": "features description",
+                "img": "https://i.ibb.co/23b9dMq/adbl-cart.gif",
+            },
+        ],
     },
     {
         "id": "lesesame",
@@ -23,7 +45,12 @@ const projects = [
             {
                 "title": "Change color",
                 "desc": "features description",
-                "img": "https://i.ibb.co/9Z16Px7/manuf-gif.gif",
+                "img": "https://i.ibb.co/RHS26Ns/manuf-conf.gif",
+            },
+            {
+                "title": "Change color",
+                "desc": "features description",
+                "img": "https://i.ibb.co/z89ST7Y/manuf-conf-question.gif",
             }
         ],
     },
@@ -31,7 +58,7 @@ const projects = [
         "id": "socialmedia",
         "title": "social media",
         "desc": "description",
-        "img": "https://i.ibb.co/XpxDnjL/social-main.jpg",
+        "img": "https://i.ibb.co/q1hdD34/react-social-a3a4f-web-app-1.png",
         "url": "https://react-social-a3a4f.web.app/",
         "descUrl": "https://social-media-website-vladmasliuk.vercel.app/",
     },

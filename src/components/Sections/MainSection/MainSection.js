@@ -12,7 +12,7 @@ const MainSection = () =>{
             <MainSectionOverlay>
                 <TitleWrap>
                     <Title>Vladyslav Masliuk</Title>
-                    <Title>Portfolio</Title>
+                    <Title>Web developer</Title>
                 </TitleWrap>
             </MainSectionOverlay>
         </MainSectionWrap>
