@@ -1,10 +1,14 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 
+// lib
+import Slider from "react-slick";
+
 // components
 import Container from '../Basic/Container';
 import SectionTitle from '../Basic/SectionTitle';
-import ProjectFeature from '../ProjectFeature/ProjectFeature'
+import ProjectFeature from '../ProjectFeature/ProjectFeature' 
+import ProjectScreen from '../ProjectScreen/ProjectScreen'
 
 // style
 import styled from 'styled-components';
@@ -12,8 +16,20 @@ import styled from 'styled-components';
 // img
 import BackImg from '../../assets/img/back-arr.svg'
 
+// css
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css"
+
 const ProjectLayout = ({project}) =>{
     const history = useHistory();
+
+    const sliderSet = {
+        dots: false,
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    };
+
     return(
         <PageWrap>
             <Container>
@@ -45,9 +61,24 @@ const ProjectLayout = ({project}) =>{
                 <div style={{marginTop: 50, paddingTop: 50, paddingBottom: 50, background: '#2a2a2a'}}>
                     <Container>
                         <SectionTitle>project features</SectionTitle>
-                        {project.features.map((feature, index) => (
-                            <ProjectFeature feature={feature} key={index}/>
-                        ))}
+                        <div>
+                            {project.features.map((feature, index) => (
+                                <ProjectFeature feature={feature} key={index}/>
+                            ))}
+                        </div>
+                    </Container>
+                </div>
+            ) : null}
+
+            {project.screens ? (
+                <div style={{marginTop: 50, paddingTop: 50, paddingBottom: 50, background: '#2a2a2a'}}>
+                    <Container>
+                        <SectionTitle>project screens</SectionTitle>
+                        <Slider {...sliderSet} style={{width: '80%', marginLeft: 'auto', marginRight: 'auto'}}>
+                            {project.screens.map((screen, index) => (
+                                <ProjectScreen screen={screen} key={index}/>
+                            ))}
+                        </Slider>
                     </Container>
                 </div>
             ) : null}

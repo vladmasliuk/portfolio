@@ -6,6 +6,9 @@ import styled from 'styled-components';
 // img
 import MainImg from '../../../assets/img/main-img.jpg';
 
+// Breakpoints
+import breakpoint from '../../../breakpoint/breakpoint';
+
 const MainSection = () =>{
     return(
         <MainSectionWrap style={{backgroundImage: `url(${MainImg})`}}>
@@ -47,6 +50,9 @@ const Title = styled.h1`
     font-size: 8vw;
     font-family: True Lies;
     font-weight: 500;
+    @media ${breakpoint.device.tablet}{
+        font-size: 12vw;
+    }
 `;
 
 export default MainSection;

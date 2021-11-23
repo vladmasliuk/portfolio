@@ -11,6 +11,9 @@ import styled from 'styled-components';
 // img
 import MenuIcon from '../../assets/img/menu-icon.svg';
 
+// Breakpoints
+import breakpoint from '../../breakpoint/breakpoint';
+
 const Header = () => {
     const [open, setOpen] = useState(false);
 
@@ -161,11 +164,21 @@ const Menu = styled.ul`
     margin: 0;
     list-style: none;
     display: flex;
+    @media ${breakpoint.device.tablet}{
+        display: block;
+    }
 `;
 
 const MenuItem = styled.li`
     &:not(:last-child) {
         margin-right: 120px;
+        @media ${breakpoint.device.laptop}{
+            margin-right: 50px;
+        }
+        @media ${breakpoint.device.tablet}{
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
     }
     & a{
         font-family: 'ProFontWindows', sans-serif;
