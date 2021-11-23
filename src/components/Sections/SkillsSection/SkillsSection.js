@@ -1,7 +1,7 @@
 import React from 'react';
 
 // lib
-import { Element } from 'react-scroll'
+import { Element } from 'react-scroll';
 
 // components
 import Container from '../../Basic/Container';
@@ -11,13 +11,23 @@ import SectionTitle from '../../Basic/SectionTitle';
 // style
 import styled from 'styled-components';
 
-// img
-import html from '../../../assets/img/html.svg'
-import css from '../../../assets/img/css.svg'
-import js from '../../../assets/img/js.svg'
-import react from '../../../assets/img/react.svg'
-import wp from '../../../assets/img/wp.svg'
-import woocommerce from '../../../assets/img/woocommerce.svg'
+const images = [
+    {
+        "url": 'https://i.ibb.co/6gKDgrV/adbl.jpg'
+    },
+    {
+        "url": 'https://i.ibb.co/3pMtzTM/lesesame.jpg'
+    },
+    {
+        "url": 'https://i.ibb.co/cXW23fn/manuf.jpg'
+    },
+    {
+        "url": 'https://i.ibb.co/7KsCMXF/soc.jpg'
+    },
+    {
+        "url": 'https://i.ibb.co/y45X1mg/audio.jpg'
+    }
+]
 
 const SkillsSection = () =>{
     return(
@@ -33,24 +43,11 @@ const SkillsSection = () =>{
                         </Text>
                         <ImagesContainer>
                             <ImagesWrap>
-                                <ImageCard>
-                                    <Image src={html} alt=""/>
+                            {images.map((img, index) => (
+                                <ImageCard key={index}>
+                                    <Image src={img.url} alt="Project screen"/>
                                 </ImageCard>
-                                <ImageCard className="card-image">
-                                    <Image src={css} alt=""/>
-                                </ImageCard>
-                                <ImageCard className="card-image">
-                                    <Image src={js} alt=""/>
-                                </ImageCard>
-                                <ImageCard className="card-image">
-                                    <Image src={react} alt=""/>
-                                </ImageCard>
-                                <ImageCard className="card-image">
-                                    <Image src={wp} alt=""/>
-                                </ImageCard>
-                                <ImageCard className="card-image">
-                                    <Image src={woocommerce} alt=""/>
-                                </ImageCard>
+                            ))}
                             </ImagesWrap>
                         </ImagesContainer>
                     </SkillsContent>
@@ -72,30 +69,25 @@ const Text = styled.p`
 `;
 
 const ImagesContainer = styled.div`
-    overflow: hidden;
+    width: 70%;
+    margin: 0 auto;
 `;
 
 const ImagesWrap = styled.div`
-    width: 70%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    transform-style: preserve-3d;
-    transform: rotateX(65deg) rotateZ(50deg) rotateY(5deg);
+    column-count: 4;
+    column-gap: 1em;
 `;
 
 const ImageCard = styled.div`
-    transition: 0.3s;
-    &:hover{
-        transform: translateZ(20px);
-    }
+    margin: 0 0 .5em;
+    width: 100%;
+    display: block;
 `;
 
 const Image = styled.img`
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
 `;
 
 

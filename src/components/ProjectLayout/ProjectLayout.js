@@ -14,8 +14,6 @@ import BackImg from '../../assets/img/back-arr.svg'
 
 const ProjectLayout = ({project}) =>{
     const history = useHistory();
-
-
     return(
         <PageWrap>
             <Container>
@@ -46,7 +44,7 @@ const ProjectLayout = ({project}) =>{
             {project.features ? (
                 <div style={{marginTop: 50, paddingTop: 50, paddingBottom: 50, background: '#2a2a2a'}}>
                     <Container>
-                        <SectionTitle>project feature</SectionTitle>
+                        <SectionTitle>project features</SectionTitle>
                         {project.features.map((feature, index) => (
                             <ProjectFeature feature={feature} key={index}/>
                         ))}

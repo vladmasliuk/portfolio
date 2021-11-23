@@ -56,7 +56,7 @@ const ProjectItem = ({project}) =>{
 
     return(
         <Item>
-            <Link to={`/project/${project.id}`} 
+            <Link to={`/project/${project.id}`}
                 ref={item} 
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}

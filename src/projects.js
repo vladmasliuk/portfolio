@@ -62,13 +62,13 @@ const projects = [
         "url": "https://react-social-a3a4f.web.app/",
         "descUrl": "https://social-media-website-vladmasliuk.vercel.app/",
     },
-    // {
-    //     "id": "robimelektryke",
-    //     "title": "robimelektryke",
-    //     "desc": "description",
-    //     "img": "https://i.ibb.co/gJMPndC/robim-main.jpg",
-    //     "url": "https://robimelektryke.pl/",
-    // }
+    {
+        "id": "audiopremium",
+        "title": "audio premium",
+        "desc": "description",
+        "img": "https://i.ibb.co/HH4QNt1/audio.jpg",
+        "url": "https://audio-premium.pl/",
+    }
 ]
 
 export default projects;
