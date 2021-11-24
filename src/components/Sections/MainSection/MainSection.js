@@ -68,7 +68,7 @@ const TitleWrap = styled.div`
         margin-inline-start: 0px;
         margin-inline-end: 0px;
         @media ${breakpoint.device.tablet}{
-            font-size: 12vw;
+            font-size: 10vw;
         }
     }
 `;
@@ -79,7 +79,7 @@ const Title = styled.h1`
     font-family: True Lies;
     font-weight: 500;
     @media ${breakpoint.device.tablet}{
-        font-size: 12vw;
+        font-size: 10vw;
     }
 `;
 

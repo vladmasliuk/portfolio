@@ -6,10 +6,15 @@ import {TimelineLite, Expo} from 'gsap';
 import Scroll from 'react-scroll'
 
 // style
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 // img
 import MenuIcon from '../../assets/img/menu-icon.svg';
+import menuAbout from '../../assets/img/menu_1.jpg'
+import menuSkills from '../../assets/img/menu_2.jpg'
+import menuEx from '../../assets/img/menu_3.jpg'
+import menuProjects from '../../assets/img/menu-proj.jpg'
+import menuContact from '../../assets/img/menu-con.jpg'
 
 // Breakpoints
 import breakpoint from '../../breakpoint/breakpoint';
@@ -125,6 +130,22 @@ const Header = () => {
     )
 }
 
+// animation
+const fadeIn = keyframes`
+    0% {
+        opacity: 0;
+        top: -160px;
+    }
+    50% {
+        opacity: 1;
+        top: -180px;
+    }
+    100% {
+        opacity: 1;
+        top: -180px;
+    }
+`;
+
 // menu btn 
 const MenuBtnWrap = styled.div`
     position: fixed;
@@ -183,7 +204,50 @@ const MenuItem = styled.li`
     & a{
         font-family: 'ProFontWindows', sans-serif;
         text-transform: uppercase;
+        position: relative;
+        &:hover::before{
+            content: "";
+            z-index: -1;
+            width: 300px;
+            height: 400px;
+            display: block;
+            position: absolute;
+            top: -180px;
+            left: -30px;
+            transition: 1s;
+            animation: ${fadeIn} 2s ease-in-out;
+            pointer-eevents: none;
+            @media ${breakpoint.device.tablet}{
+                width: 0 !important;
+            }
+        }
     }
+    &:first-child a:hover:before {
+        background: url(${menuAbout});
+        background-size: cover;
+        background-position: center;
+    }
+    &:nth-child(2) a:hover::before {
+        background: url(${menuSkills});
+        background-size: cover;
+        background-position: center;
+    }
+    &:nth-child(3) a:hover::before {
+        background: url(${menuEx});
+        background-size: cover;
+        background-position: center;
+    }
+    &:nth-child(4) a:hover::before {
+        background: url(${menuProjects});
+        background-size: cover;
+        background-position: center;
+    }
+    &:last-child a:hover::before {
+        background: url(${menuContact});
+        background-size: cover;
+        background-position: center;
+    }
+    
 `;
 
 export default Header;

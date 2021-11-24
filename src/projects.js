@@ -36,10 +36,16 @@ const projects = [
         "url": "https://lesesame.eu/",
         "screens": [
             {
-                "url": "https://i.ibb.co/CJLXsNB/les.jpg",   
+                "url": "https://i.ibb.co/whdpPY5/les4.jpg",   
             },
             {
-                "url": "https://i.ibb.co/DRDH48h/les2.jpg",
+                "url": "https://i.ibb.co/DMbf1Pc/les.jpg",   
+            },
+            {
+                "url": "https://i.ibb.co/bWQYQQR/les2.jpg",
+            },
+            {
+                "url": "https://i.ibb.co/19mHML9/les3.jpg",
             },
         ],
     },
@@ -71,13 +77,16 @@ const projects = [
         "descUrl": "https://social-media-website-vladmasliuk.vercel.app/",
         "screens": [
             {
-                "url": "https://i.ibb.co/gFn5DB2/soc2.jpg",
+                "url": "https://i.ibb.co/t3mQmBd/soc1.jpg",
             },
             {
-                "url": "https://i.ibb.co/HgYqjcr/soc3.jpg",
+                "url": "https://i.ibb.co/r3Jky6g/soc2.jpg",
             },
             {
-                "url": "https://i.ibb.co/1n8BgbX/soc4.jpg",
+                "url": "https://i.ibb.co/MgcSBFb/soc3.jpg",
+            },
+            {
+                "url": "https://i.ibb.co/GszGBPZ/image-2021-11-24-18-09-28.jpg",
             }
         ],
     },
@@ -89,13 +98,13 @@ const projects = [
         "url": "https://audio-premium.pl/",
         "screens": [
             {
-                "url": "https://i.ibb.co/Y0g8rPr/audio.jpg",   
+                "url": "https://i.ibb.co/NLj6f8C/audio.jpg",   
             },
             {
-                "url": "https://i.ibb.co/JsryF2N/audio2.jpg",
+                "url": "https://i.ibb.co/2hHRY2J/audio2.jpg",
             },
             {
-                "url": "https://i.ibb.co/xCpp6zh/audio3.jpg",
+                "url": "https://i.ibb.co/S03mcPq/audio3.jpg",
             },
         ],
     }

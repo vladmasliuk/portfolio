@@ -15,6 +15,7 @@ import styled from 'styled-components';
 
 // img
 import BackImg from '../../assets/img/back-arr.svg'
+import LinkImg from '../../assets/img/open-icon.svg'
 
 // css
 import "slick-carousel/slick/slick.css"; 
@@ -49,10 +50,12 @@ const ProjectLayout = ({project}) =>{
                         <LinksWrap>
                             <VisitUrl href={project.url} alt={project.title} target="_blank">
                                 Visit website
+                                <LinkIcon src={LinkImg} alt="Visit"/>
                             </VisitUrl>
                             {project.descUrl ? (
                                 <VisitUrl href={project.descUrl} alt={project.title} target="_blank">
                                     Description website
+                                    <LinkIcon src={LinkImg} alt="Visit"/>
                                 </VisitUrl>
                             ): null}
                         </LinksWrap>
@@ -148,6 +151,7 @@ const VisitUrl = styled.a`
     border: 1px solid #e6e6e6;
     padding: 10px 20px;
     margin-top: 20px;
+
 `;
 
 const LinksWrap = styled.div`
@@ -155,6 +159,11 @@ const LinksWrap = styled.div`
     & ${VisitUrl}{
         margin-right: 20px;
     }
+`;
+
+const LinkIcon = styled.img`
+    margin-left: 10px;
+    width: 15px;
 `;
 
 export default ProjectLayout;
