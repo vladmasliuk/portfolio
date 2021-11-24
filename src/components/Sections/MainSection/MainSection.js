@@ -1,5 +1,8 @@
 import React from 'react';
 
+// lib
+import Baffle from "baffle-react";
+
 // style
 import styled from 'styled-components';
 
@@ -14,8 +17,19 @@ const MainSection = () =>{
         <MainSectionWrap style={{backgroundImage: `url(${MainImg})`}}>
             <MainSectionOverlay>
                 <TitleWrap>
-                    <Title>Vladyslav Masliuk</Title>
-                    <Title>Web developer</Title>
+                    <Title>
+                        Vladyslav Masliuk
+                    </Title>
+                    <Baffle
+                    speed={150}
+                    characters="░▒< ▒><>▓ <█░>▒ ▓█▒ ▓<▒/█ ▓░▓░ ▓▒░ █░▒░ █▓█░"
+                    exclude={[" ", "!"]}
+                    obfuscate={false}
+                    update={true}
+                    revealDuration={5000}
+                    >
+                        Web developer
+                    </Baffle>
                 </TitleWrap>
             </MainSectionOverlay>
         </MainSectionWrap>
@@ -43,6 +57,20 @@ const MainSectionOverlay = styled.div`
 const TitleWrap = styled.div`
     text-align: center;
     transform: rotate(-15deg);
+    & span{
+        color: #3cff00;
+        font-size: 8vw;
+        font-family: True Lies;
+        font-weight: 500;
+        display: block;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        @media ${breakpoint.device.tablet}{
+            font-size: 12vw;
+        }
+    }
 `;
 
 const Title = styled.h1`
