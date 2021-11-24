@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 // style
 import styled from 'styled-components';
 
+// Breakpoints
+import breakpoint from '../../breakpoint/breakpoint';
+
 const initialState = {
     opacity: 0,
     parallaxPos: {x: 0, y: -20},
@@ -88,6 +91,9 @@ const ItemLinkClone = styled.h3`
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
     margin: 0;
     font-weight: 400;
+    @media ${breakpoint.device.mobile}{
+        font-size: 9vw;
+    }
 `;
 
 const Item = styled.li`
@@ -116,6 +122,9 @@ const ItemLink = styled.h3`
     color: transparent;
     margin: 0;
     font-weight: 400;
+    @media ${breakpoint.device.mobile}{
+        font-size: 9vw;
+    }
 `;
 
 export default ProjectItem;

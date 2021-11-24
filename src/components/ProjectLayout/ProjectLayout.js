@@ -20,6 +20,9 @@ import BackImg from '../../assets/img/back-arr.svg'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"
 
+// Breakpoints
+import breakpoint from '../../breakpoint/breakpoint';
+
 const ProjectLayout = ({project}) =>{
     const history = useHistory();
 
@@ -40,7 +43,7 @@ const ProjectLayout = ({project}) =>{
                     <ImgWrap>
                         <Img src={project.img} alt={project.title}/>
                     </ImgWrap>
-                    <div>
+                    <TextWrap>
                         <Title>{project.title}</Title>
                         <Desc>{project.desc}</Desc>
                         <LinksWrap>
@@ -53,7 +56,7 @@ const ProjectLayout = ({project}) =>{
                                 </VisitUrl>
                             ): null}
                         </LinksWrap>
-                    </div>
+                    </TextWrap>
                 </Wrap>
             </Container>
             
@@ -100,15 +103,29 @@ const Wrap = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
     padding-top: 30px;
+    @media ${breakpoint.device.tablet}{
+        grid-template-columns: repeat(1, 1fr);
+    }
 `;
 
 const ImgWrap = styled.div`
     width: 100%;
     height: 100%;
+    order: 1;
+    @media ${breakpoint.device.tablet}{
+        order: 2;
+    }
 `;
 
 const Img = styled.img`
     width: 100%;
+`;
+
+const TextWrap = styled.div`
+    order: 2;
+    @media ${breakpoint.device.tablet}{
+        order: 1;
+    }
 `;
 
 const Title = styled.h1`
@@ -118,6 +135,9 @@ const Title = styled.h1`
     color: transparent;
     margin: 0;
     font-weight: 400;
+    @media ${breakpoint.device.tablet}{
+        font-size: 9vw;
+    }
 `;
 
 const Desc = styled.p`

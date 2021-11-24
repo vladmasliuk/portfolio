@@ -11,6 +11,9 @@ import SectionTitle from '../../Basic/SectionTitle';
 // style
 import styled from 'styled-components';
 
+// Breakpoints
+import breakpoint from '../../../breakpoint/breakpoint';
+
 const items = [
     {
         date: "05/2019 – 10/2019",
@@ -63,6 +66,9 @@ const TimelineWrap = styled.div`
     align-items: center;
     justify-content: center;
     padding-top: 50px;
+    @media ${breakpoint.device.tablet}{
+        justify-content: flex-end;
+    }
 `;
 
 const Timeline = styled.div`
@@ -78,6 +84,12 @@ const Timeline = styled.div`
         height: 100%;
         background-color: gray;
     }
+    @media ${breakpoint.device.tablet}{
+        width: 90%;
+        &:before{
+            left: 100%;
+        }
+    }
 `;
 
 const List = styled.ul`
@@ -89,10 +101,12 @@ const List = styled.ul`
 const ListItem = styled.li`
     width: 50%;
     position: relative;
-    // padding: 20px;
     background-color: #2a2a2a;
     color: white;
     border-radius: 10px;
+    @media ${breakpoint.device.tablet}{
+        width: 100%;
+    }
     &:before{
         content: "";
         position: absolute;
@@ -110,6 +124,10 @@ const ListItem = styled.li`
         clear: right;
         transform: translateX(-30px);
         border-radius: 20px 0px 20px 20px;
+        @media ${breakpoint.device.tablet}{
+            float: none;
+            clear: none;
+        }
         &:before {
             transform: translate(50%, -50%);
             right: -30px;
@@ -120,9 +138,19 @@ const ListItem = styled.li`
         clear: left;
         transform: translateX(30px);
         border-radius: 0px 20px 20px 20px;
+        @media ${breakpoint.device.tablet}{
+            float: none;
+            clear: none;
+            transform: translateX(-30px);
+            border-radius: 20px 0px 20px 20px;
+        }
         &:before {
             transform: translate(-50%, -50%);
             left: -30px;
+            @media ${breakpoint.device.tablet}{
+                transform: translateX(50%, -50%);
+                left: calc(100% + 30px);
+            }
         }
     }
 `;

@@ -3,6 +3,9 @@ import React from 'react';
 // style
 import styled from 'styled-components';
 
+// Breakpoints
+import breakpoint from '../../breakpoint/breakpoint';
+
 const ProjectFeature = ({feature}) =>{
     return(
         <FeatureWrap>
@@ -18,14 +21,11 @@ const ProjectFeature = ({feature}) =>{
     )
 }
 
-const TextWrap = styled.div`
-    order: 1;
-`;
+const TextWrap = styled.div``;
 
 const ImgWrap = styled.div`
     width: 100%;
     height: 100%;
-    order: 2;
 `;
 
 const FeatureWrap = styled.div`
@@ -35,6 +35,13 @@ const FeatureWrap = styled.div`
     padding: 25px 0;
     &:not(:last-child){
         border-bottom: 1px solid rgba(230,230,230, .1);
+    }
+    @media ${breakpoint.device.tablet}{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+    @media ${breakpoint.device.mobile}{
+        grid-gap: 0;
     }
 `;
 
@@ -48,6 +55,9 @@ const Title = styled.h3`
     color: transparent;
     margin: 0;
     font-weight: 400;
+    @media ${breakpoint.device.tablet}{
+        font-size: 7vw;
+    }
 `;
 
 const Desc = styled.p`

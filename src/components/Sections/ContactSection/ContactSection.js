@@ -10,6 +10,9 @@ import Section from '../../Basic/Section';
 // style
 import styled from 'styled-components';
 
+// Breakpoints
+import breakpoint from '../../../breakpoint/breakpoint';
+
 const ContactSection = () =>{
     return(
         <Element id='contact-sec' name='contact-sec'>
@@ -36,10 +39,12 @@ const Wrap = styled.div`
 
 const Title = styled.h2`
     color: #fff;
-    // font-family: 'True Lies',sans-serif;
     font-size: 7vw;
     text-shadow: 0 0 10px  #3cff00, 0 0 40px  #3cff00 , 0 0 80px  #3cff00;
     margin: 0 0 20px 0;
     font-weight: 400;
+    @media ${breakpoint.device.tablet}{
+        font-size: 10vw;
+    }
 `;
 export default ContactSection;

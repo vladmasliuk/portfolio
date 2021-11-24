@@ -13,13 +13,14 @@ const ProjectScreen = ({screen}) =>{
 
 const SliderItem = styled.div`
     width: 100%;
-    height: 750px
+    height: 80vh;
 `;
 
 const SliderImg = styled.img`
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    height: 80vh;
 `;
 
 export default ProjectScreen;

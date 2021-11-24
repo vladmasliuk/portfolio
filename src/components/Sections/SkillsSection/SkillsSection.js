@@ -11,6 +11,9 @@ import SectionTitle from '../../Basic/SectionTitle';
 // style
 import styled from 'styled-components';
 
+// Breakpoints
+import breakpoint from '../../../breakpoint/breakpoint';
+
 const images = [
     {
         "url": 'https://i.ibb.co/6gKDgrV/adbl.jpg'
@@ -61,6 +64,9 @@ const SkillsContent = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
+    @media ${breakpoint.device.tablet}{
+        grid-template-columns: repeat(1, 1fr);
+    }
 `;
 
 const Text = styled.p`
@@ -71,11 +77,17 @@ const Text = styled.p`
 const ImagesContainer = styled.div`
     width: 70%;
     margin: 0 auto;
+    @media ${breakpoint.device.tablet}{
+        width: 100%;
+    }
 `;
 
 const ImagesWrap = styled.div`
     column-count: 4;
     column-gap: 1em;
+    @media ${breakpoint.device.mobile}{
+        column-count: 2;
+    }
 `;
 
 const ImageCard = styled.div`
