@@ -9,6 +9,7 @@ import Container from '../Basic/Container';
 import SectionTitle from '../Basic/SectionTitle';
 import ProjectFeature from '../ProjectFeature/ProjectFeature' 
 import ProjectScreen from '../ProjectScreen/ProjectScreen'
+import ProjectTechItem from '../ProjectTechItem/ProjectTechItem';
 
 // style
 import styled from 'styled-components';
@@ -47,6 +48,13 @@ const ProjectLayout = ({project}) =>{
                     <TextWrap>
                         <Title>{project.title}</Title>
                         <Desc>{project.desc}</Desc>
+                        {project.tech ? (
+                            <TechWrap>
+                                {project.tech.map((techItem, index) => (
+                                    <ProjectTechItem key={index} techItem={techItem}/>
+                                ))}
+                            </TechWrap>
+                        ) : null}
                         <LinksWrap>
                             <VisitUrl href={project.url} alt={project.title} target="_blank">
                                 Visit website
@@ -165,6 +173,11 @@ const LinksWrap = styled.div`
 const LinkIcon = styled.img`
     margin-left: 10px;
     width: 15px;
+`;
+
+const TechWrap = styled.div`
+    display: flex;
+    align-items: center;
 `;
 
 export default ProjectLayout;
