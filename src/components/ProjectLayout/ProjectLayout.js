@@ -54,7 +54,7 @@ const ProjectLayout = ({project}) =>{
                             </VisitUrl>
                             {project.descUrl ? (
                                 <VisitUrl href={project.descUrl} alt={project.title} target="_blank">
-                                    Description website
+                                    Visit description website
                                     <LinkIcon src={LinkImg} alt="Visit"/>
                                 </VisitUrl>
                             ): null}
@@ -151,6 +151,7 @@ const VisitUrl = styled.a`
     border: 1px solid #e6e6e6;
     padding: 10px 20px;
     margin-top: 20px;
+    background: #2a2a2a;
 
 `;
 

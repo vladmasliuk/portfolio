@@ -49,6 +49,7 @@ const ExperienceSection = () =>{
                                             <Date>{item.date}</Date>
                                             <Title>{item.title}</Title>
                                             <Desc>{item.desc}</Desc>
+                                            
                                         </ListItemContent>
                                 </ListItem>
                                 ))}

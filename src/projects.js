@@ -2,36 +2,44 @@ const projects = [
     {
         "id": "adbl",
         "title": "adbl",
-        "desc": "description",
+        "desc": "Huge website with catalog of products, training order system and map of distributors.",
         "img": "https://i.ibb.co/V2CBrc1/adbl-main.jpg",
         "url": "https://adbl.eu/",
         "features": [
             {
                 "title": "Map",
-                "desc": "features description",
+                "desc": "Map of distributors with filtering by country, voivodeship, city and type of store. Created with Google maps API.",
                 "img": "https://i.ibb.co/HH961sd/adbl-map.gif",
             },
             {
                 "title": "Calendar",
-                "desc": "features description",
+                "desc": "Calendar with available training dates. After clicking, the user will be redirected to the purchase of the training, if date is available.",
                 "img": "https://i.ibb.co/9wGNBsX/adbl-calendar.gif",
             },
             {
                 "title": "Category",
-                "desc": "features description",
+                "desc": "If there are 7 or less days left to the selected training and nobody has purchased it, the training will be automatically blocked and will not be available for purchase",
                 "img": "https://i.ibb.co/0YqXKNF/adbl-category.gif",
             },
             {
                 "title": "Cart",
-                "desc": "features description",
+                "desc": "Promotional package with a price of 1PLN is automatically added to the training, which cannot be removed from the cart. If there are more than 7 days left to the training, then the price for the training and promotional package is 50% lower. However, if the user wants to pay 100%, he has that option and price will chage to 100%.",
                 "img": "https://i.ibb.co/23b9dMq/adbl-cart.gif",
+            },
+        ],
+        "tech":[
+            {
+                "name": "wordpress"
+            },
+            {
+                "name": "woocommerce"
             },
         ],
     },
     {
         "id": "lesesame",
         "title": "lesesame",
-        "desc": "description",
+        "desc": "Simple and cleen online shop.",
         "img": "https://i.ibb.co/JQGMbX5/lesesame-main.jpg",
         "url": "https://lesesame.eu/",
         "screens": [
@@ -48,30 +56,43 @@ const projects = [
                 "url": "https://i.ibb.co/19mHML9/les3.jpg",
             },
         ],
+        "tech":[
+            {
+                "name": "wordpress"
+            },
+            {
+                "name": "woocommerce"
+            },
+        ],
     },
     {
         "id": "manufakturawladku",
         "title": "manufakturawlasku",
-        "desc": "description",
+        "desc": "A descriptive website with the ability to order the product. At the klient's request, the order is processed by e-mail.",
         "img": "https://i.ibb.co/wL0Mcs7/manuf-main.jpg",
         "url": "https://manufakturawlasku.pl/",
         "features": [
             {
-                "title": "Change color",
-                "desc": "features description",
+                "title": "Product comfugirator",
+                "desc": "If the proposed color does not satisfy the user, he can choose another from the color palette. Color change works instantly, right on the product image. color name and color code is automatically sent to order form.",
                 "img": "https://i.ibb.co/RHS26Ns/manuf-conf.gif",
             },
             {
-                "title": "Change color",
-                "desc": "features description",
+                "title": "Order another color",
+                "desc": "If the user does not like any of the proposed colors from the offer, he can choose another from the RAL palette and make a custom product.",
                 "img": "https://i.ibb.co/z89ST7Y/manuf-conf-question.gif",
             }
+        ],
+        "tech":[
+            {
+                "name": "wordpress"
+            },
         ],
     },
     {
         "id": "socialmedia",
         "title": "social media",
-        "desc": "description",
+        "desc": "Simple social media with registration, login, ability to publish posts, commenting and liking them. User also can add and edit his profile data (photo, about and location). After liking or commenting on a post, the user will get a notification. From description website ty możesz pobrać desktopową lub mobilną wercje aplikacji.",
         "img": "https://i.ibb.co/q1hdD34/react-social-a3a4f-web-app-1.png",
         "url": "https://react-social-a3a4f.web.app/",
         "descUrl": "https://social-media-website-vladmasliuk.vercel.app/",
@@ -89,11 +110,34 @@ const projects = [
                 "url": "https://i.ibb.co/GszGBPZ/image-2021-11-24-18-09-28.jpg",
             }
         ],
+        "tech":[
+            {
+                "name": "React JS"
+            },
+            {
+                "name": "Redux"
+            },
+            {
+                "name": "Node JS"
+            },
+            {
+                "name": "Firebase"
+            },
+            {
+                "name": "React Native"
+            },
+            {
+                "name": "Electron JS"
+            },
+            {
+                "name": "Next JS"
+            },
+        ],
     },
     {
         "id": "audiopremium",
         "title": "audio premium",
-        "desc": "description",
+        "desc": "Simple description website",
         "img": "https://i.ibb.co/HH4QNt1/audio.jpg",
         "url": "https://audio-premium.pl/",
         "screens": [
@@ -107,7 +151,12 @@ const projects = [
                 "url": "https://i.ibb.co/S03mcPq/audio3.jpg",
             },
         ],
-    }
+        "tech":[
+            {
+                "name": "wordpress"
+            },
+        ],
+    },
 ]
 
 export default projects;

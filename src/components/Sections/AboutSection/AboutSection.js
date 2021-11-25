@@ -22,10 +22,9 @@ const AboutSection = () =>{
                     <SectionTitle>
                         01. About
                     </SectionTitle>
-                    <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    <Text>
+                    My name is Vladyslav and I'm Web Deleloper with 2+ years of experience.
+                    I like web programming, resolving problems and creating creative things with web technologies.
                     </Text>
                 </Container>
             </Section>

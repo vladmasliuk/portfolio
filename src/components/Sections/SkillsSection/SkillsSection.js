@@ -39,11 +39,17 @@ const SkillsSection = () =>{
                 <Container>
                     <SectionTitle>02. Skills</SectionTitle>
                     <SkillsContent>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna 
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        </Text>
+                        <TextWrap>
+                            <Text>Technologies: HTML / CSS / JavaScript / JQuery / PHP / MySQL / Wordpress / Woocommerce /
+                                React JS / React&nbsp;Native / Next&nbsp;JS / REST&nbsp;API / Firebase / MongoDB
+                            </Text>
+                            <Text>
+                                Design tools: Figma / Photoshop / AbodeXD
+                            </Text>
+                            <Text>
+                                Other: Slack / Notion / Asana
+                            </Text>
+                        </TextWrap>
                         <ImagesContainer>
                             <ImagesWrap>
                             {images.map((img, index) => (
@@ -69,9 +75,17 @@ const SkillsContent = styled.div`
     }
 `;
 
+const TextWrap = styled.div`
+    width: 70%;
+    @media ${breakpoint.device.tablet}{
+        width: 100%;
+    }
+`;
+
 const Text = styled.p`
     color: #e6e6e6;
-    margin: 0;
+    margin: 0 0 20px 0;
+    font-size: 20px;
 `;
 
 const ImagesContainer = styled.div`
