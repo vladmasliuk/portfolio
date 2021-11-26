@@ -68,12 +68,12 @@ const projects = [
     {
         "id": "manufakturawladku",
         "title": "manufakturawlasku",
-        "desc": "A descriptive website with the ability to order the product. At the klient's request, the order is processed by e-mail.",
+        "desc": "Descriptive website with the ability to order the product. At the klient's request, the order is processed by e-mail.",
         "img": "https://i.ibb.co/wL0Mcs7/manuf-main.jpg",
         "url": "https://manufakturawlasku.pl/",
         "features": [
             {
-                "title": "Product comfugirator",
+                "title": "Product comfigurator",
                 "desc": "If the proposed color does not satisfy the user, he can choose another from the color palette. Color change works instantly, right on the product image. color name and color code is automatically sent to order form.",
                 "img": "https://i.ibb.co/RHS26Ns/manuf-conf.gif",
             },
@@ -92,7 +92,7 @@ const projects = [
     {
         "id": "socialmedia",
         "title": "social media",
-        "desc": "Simple social media with registration, login, ability to publish posts, commenting and liking them. User also can add and edit his profile data (photo, about and location). After liking or commenting on a post, the user will get a notification. From description website ty możesz pobrać desktopową lub mobilną wercje aplikacji.",
+        "desc": "Simple social media with registration, login, ability to publish posts, commenting and liking them. User also can add and edit his profile data (photo, about and location). After liking or commenting on a post, the user will get a notification. From description website you can download the desktop or mobile version of application.",
         "img": "https://i.ibb.co/q1hdD34/react-social-a3a4f-web-app-1.png",
         "url": "https://react-social-a3a4f.web.app/",
         "descUrl": "https://social-media-website-vladmasliuk.vercel.app/",

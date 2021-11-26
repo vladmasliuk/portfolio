@@ -47,7 +47,7 @@ const SkillsSection = () =>{
                                 Design tools: Figma / Photoshop / AbodeXD
                             </Text>
                             <Text>
-                                Other: Slack / Notion / Asana
+                                Other: Plesk / Slack / Asana / Notion
                             </Text>
                         </TextWrap>
                         <ImagesContainer>
