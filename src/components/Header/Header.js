@@ -10,9 +10,9 @@ import styled, { keyframes } from 'styled-components';
 
 // img
 import MenuIcon from '../../assets/img/menu-icon.svg';
-import menuAbout from '../../assets/img/menu_1.jpg'
-import menuSkills from '../../assets/img/menu_2.jpg'
-import menuEx from '../../assets/img/menu_3.jpg'
+import menuAbout from '../../assets/img/menu-about.jpg'
+import menuSkills from '../../assets/img/menu-skills.jpg'
+import menuEx from '../../assets/img/menu-ex.jpg'
 import menuProjects from '../../assets/img/menu-proj.jpg'
 import menuContact from '../../assets/img/menu-con.jpg'
 
