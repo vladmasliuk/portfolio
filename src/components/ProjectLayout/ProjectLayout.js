@@ -156,14 +156,10 @@ const Desc = styled.p`
 `;
 
 const VisitUrl = styled.a`
-    border: 1px solid #e6e6e6;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background: #2a2a2a;
-    transition: box-shadow .5s;
-    &:hover{
-        box-shadow: 0 0 10px  #3cff00, 0 0 40px  #3cff00 , 0 0 80px  #3cff00;
-    }
+    // border: 1px solid #e6e6e6;
+    // padding: 10px 20px;
+    margin-top: 30px;
+    // background: #2a2a2a;
 
 `;
 
