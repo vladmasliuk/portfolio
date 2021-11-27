@@ -1,7 +1,7 @@
 import React, {useRef, useState} from 'react';
 
 // libs
-import {TweenMax, Expo} from 'gsap';
+import {TimelineLite, Expo} from 'gsap';
 import Scroll from 'react-scroll'
 
 // style
@@ -18,13 +18,17 @@ import menuContact from '../../assets/img/menu-con.jpg'
 // Breakpoints
 import breakpoint from '../../breakpoint/breakpoint';
 
+import CSSPlugin from 'gsap/CSSPlugin';
+
+
 const Header = () => {
+    const C = CSSPlugin; 
     const [open, setOpen] = useState(false);
 
     let overlay = useRef(null);
     
     const openMenu = () =>{
-        let tl = new TweenMax({pause: true});
+        let tl = new TimelineLite({pause: true});
         let menuItem = document.querySelectorAll("#main-menu li");
 
         if(open === false){
@@ -38,7 +42,7 @@ const Header = () => {
         }else{
             tl.staggerFromTo(menuItem, 1, {y: 0, opacity: 1, ease: Expo.easeOut}, {y: 100, opacity: 0, ease: Expo.easeOut}, 0.1);
             tl.to(overlay, 1.9, {
-                top: '-130%',
+                top: '-120%',
                 ease: Expo.easeInOut,
             });
             tl.play();
@@ -161,7 +165,7 @@ const MenuOverlay = styled.div`
     height: 100vh;
     background: #000;
     position: fixed;
-    top: -130%;
+    top: -120%;
     left: 0;
     z-index: 4;
     display: flex;
