@@ -175,6 +175,11 @@ const LinkIcon = styled.img`
 const TechWrap = styled.div`
     display: flex;
     align-items: center;
+    @media ${breakpoint.device.mobile}{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
 `;
 
 export default ProjectLayout;
