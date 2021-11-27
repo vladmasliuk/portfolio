@@ -10,7 +10,7 @@ import ProjectsSection from '../components/Sections/ProjectsSection/ProjectsSect
 import ContactSection from '../components/Sections/ContactSection/ContactSection';
 
 
-const HomePage = () =>{
+const homePage = () =>{
     return(
         <>
             <Header/>
@@ -24,4 +24,4 @@ const HomePage = () =>{
     )
 }
 
-export default HomePage;
+export default homePage;

@@ -4,7 +4,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // pages
-import HomePage from './pages/HomePage';
+import homePage from './pages/homePage';
 import NotFoundPage from './pages/NotFoundPage';
 import ProjectPage from './pages/ProjectPage';
 
@@ -19,7 +19,7 @@ function App() {
     <Router>
       <Cursor/>
         <Switch>
-          <Route exact path="/" component={HomePage}/>
+          <Route exact path="/" component={homePage}/>
           <Route exact path="/project/:id" render={({match}) => (
             <ProjectPage project={projects.find(p => p.id === match.params.id)} />
           )} />
