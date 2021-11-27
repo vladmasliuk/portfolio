@@ -1,7 +1,7 @@
 import React, {useRef, useState} from 'react';
 
 // libs
-import {TimelineLite, Expo} from 'gsap';
+import {TweenMax, Expo} from 'gsap';
 import Scroll from 'react-scroll'
 
 // style
@@ -24,7 +24,7 @@ const Header = () => {
     let overlay = useRef(null);
     
     const openMenu = () =>{
-        let tl = new TimelineLite({pause: true});
+        let tl = new TweenMax({pause: true});
         let menuItem = document.querySelectorAll("#main-menu li");
 
         if(open === false){
