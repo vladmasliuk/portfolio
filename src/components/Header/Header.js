@@ -1,7 +1,6 @@
 import React, {useRef, useState} from 'react';
 
 // libs
-import { useLocation, matchPath } from 'react-router-dom'
 import {TimelineLite, Expo} from 'gsap';
 import Scroll from 'react-scroll'
 
@@ -48,16 +47,9 @@ const Header = () => {
     }
 
     const ScrollLink = Scroll.Link;
-    const location = useLocation();
-    const match = matchPath(location.pathname, {
-        path: "/project/:id",
-        exact: true
-    })
 
     return (
         <>
-        {!match ? (
-            <>
             <MenuBtnWrap>
                 <MenuBtn onClick={openMenu}>
                     <MenuBtnIcon src={MenuIcon} alt="Menu icon"/>
@@ -123,9 +115,6 @@ const Header = () => {
                     </MenuItem>
                 </Menu>
             </MenuOverlay>
-        </>
-        ) :null
-        }
         </>
     )
 }

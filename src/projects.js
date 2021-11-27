@@ -93,7 +93,7 @@ const projects = [
         "id": "socialmedia",
         "title": "social media",
         "desc": "Simple social media with registration, login, ability to publish posts, commenting and liking them. User also can add and edit his profile data (photo, about and location). After liking or commenting on a post, the user will get a notification. From description website you can download the desktop or mobile version of application.",
-        "img": "https://i.ibb.co/q1hdD34/react-social-a3a4f-web-app-1.png",
+        "img": "https://i.ibb.co/JzRCjjw/react-social.jpg",
         "url": "https://react-social-a3a4f.web.app/",
         "descUrl": "https://social-media-website-vladmasliuk.vercel.app/",
         "screens": [

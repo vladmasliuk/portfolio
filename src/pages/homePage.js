@@ -1,6 +1,7 @@
 import React from "react";
 
 // components
+import Header from '../components/Header/Header';
 import MainSection from '../components/Sections/MainSection/MainSection';
 import AboutSection from '../components/Sections/AboutSection/AboutSection';
 import SkillsSection from '../components/Sections/SkillsSection/SkillsSection';
@@ -8,9 +9,11 @@ import ExperienceSection from '../components/Sections/ExperienceSection/Experien
 import ProjectsSection from '../components/Sections/ProjectsSection/ProjectsSection';
 import ContactSection from '../components/Sections/ContactSection/ContactSection';
 
+
 const HomePage = () =>{
     return(
         <>
+            <Header/>
             <MainSection/>
             <AboutSection/>
             <SkillsSection/>
