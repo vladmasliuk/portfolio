@@ -88,7 +88,7 @@ const ProjectLayout = ({project}) =>{
                 <div style={{marginTop: 50, paddingTop: 50, paddingBottom: 50, background: '#2a2a2a'}}>
                     <Container>
                         <SectionTitle>project screens</SectionTitle>
-                        <Slider {...sliderSet} style={{width: '80%', marginLeft: 'auto', marginRight: 'auto'}}>
+                        <Slider {...sliderSet} style={{width: '65%', marginLeft: 'auto', marginRight: 'auto'}}>
                             {project.screens.map((screen, index) => (
                                 <ProjectScreen screen={screen} key={index}/>
                             ))}
