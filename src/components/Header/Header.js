@@ -3,6 +3,7 @@ import React, {useRef, useState} from 'react';
 // libs
 import {TimelineLite, Expo} from 'gsap';
 import Scroll from 'react-scroll'
+import CSSPlugin from 'gsap/CSSPlugin';
 
 // style
 import styled, { keyframes } from 'styled-components';
@@ -18,12 +19,9 @@ import menuContact from '../../assets/img/menu-con.jpg'
 // Breakpoints
 import breakpoint from '../../breakpoint/breakpoint';
 
-import CSSPlugin from 'gsap/CSSPlugin';
-
-
 const Header = () => {
-    const C = CSSPlugin; 
     const [open, setOpen] = useState(false);
+    const C = CSSPlugin; 
 
     let overlay = useRef(null);
     
