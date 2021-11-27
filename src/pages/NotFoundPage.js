@@ -6,7 +6,7 @@ import styled from 'styled-components';
 // img
 import ImageUlr from '../assets/img/main-img.jpg'
 
-const notFoundPage = () =>{
+const NotFoundPage = () =>{
     return(
         <Container>
             <div>
@@ -62,4 +62,4 @@ const HomeUrl = styled.a`
     font-family: 'ProFontWindows',sans-serif;
 `;
 
-export default notFoundPage;
+export default NotFoundPage;
