@@ -28,7 +28,7 @@ const Header = () => {
         let menuItem = document.querySelectorAll("#main-menu li");
 
         if(open === false){
-            tl.to(overlay, 1.9, {
+            tl.to(overlay.current, 1.9, {
                 top: 0,
                 ease: Expo.easeInOut,
             });
@@ -38,7 +38,7 @@ const Header = () => {
         }else{
             tl.staggerFromTo(menuItem, 1, {y: 0, opacity: 1, ease: Expo.easeOut}, {y: 100, opacity: 0, ease: Expo.easeOut}, 0.1);
             tl.to(overlay, 1.9, {
-                top: '-100%',
+                top: '-110%',
                 ease: Expo.easeInOut,
             });
             tl.play();
@@ -161,7 +161,7 @@ const MenuOverlay = styled.div`
     height: 100vh;
     background: #000;
     position: fixed;
-    top: -100%;
+    top: -110%;
     left: 0;
     z-index: 4;
     display: flex;
