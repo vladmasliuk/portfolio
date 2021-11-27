@@ -156,10 +156,7 @@ const Desc = styled.p`
 `;
 
 const VisitUrl = styled.a`
-    // border: 1px solid #e6e6e6;
-    // padding: 10px 20px;
     margin-top: 30px;
-    // background: #2a2a2a;
 
 `;
 
