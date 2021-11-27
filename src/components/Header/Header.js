@@ -1,7 +1,7 @@
 import React, {useRef, useState} from 'react';
 
 // libs
-import {TimelineLite, Expo} from 'gsap';
+import {TimelineLite, Expo, gsap} from 'gsap';
 import Scroll from 'react-scroll'
 import CSSPlugin from 'gsap/CSSPlugin';
 
@@ -19,10 +19,13 @@ import menuContact from '../../assets/img/menu-con.jpg'
 // Breakpoints
 import breakpoint from '../../breakpoint/breakpoint';
 
+
+if (typeof window !== "undefined") {
+    gsap.registerPlugin(CSSPlugin); 
+}
+
 const Header = () => {
     const [open, setOpen] = useState(false);
-    // const C = CSSPlugin; 
-
     let overlay = useRef(null);
     
     const openMenu = () =>{
