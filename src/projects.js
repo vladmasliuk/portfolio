@@ -107,7 +107,7 @@ const projects = [
                 "url": "https://i.ibb.co/MgcSBFb/soc3.jpg",
             },
             {
-                "url": "https://i.ibb.co/GszGBPZ/image-2021-11-24-18-09-28.jpg",
+                "url": "https://i.ibb.co/HV6sVJd/cos4.jpg",
             }
         ],
         "tech":[

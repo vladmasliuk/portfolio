@@ -25,7 +25,7 @@ const images = [
         "url": 'https://i.ibb.co/cXW23fn/manuf.jpg'
     },
     {
-        "url": 'https://i.ibb.co/7KsCMXF/soc.jpg'
+        "url": 'https://i.ibb.co/qBLJ9s1/cos.jpg'
     },
     {
         "url": 'https://i.ibb.co/y45X1mg/audio.jpg'
