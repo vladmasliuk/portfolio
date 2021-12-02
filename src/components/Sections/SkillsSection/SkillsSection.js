@@ -44,7 +44,7 @@ const SkillsSection = () =>{
                                 React JS / React&nbsp;Native / Next&nbsp;JS / REST&nbsp;API / Firebase / MongoDB
                             </Text>
                             <Text>
-                                Design tools: Figma / Photoshop / AbodeXD
+                                Design tools: Figma / Photoshop / AdobeXD
                             </Text>
                             <Text>
                                 Other: Plesk / Slack / Asana / Notion
